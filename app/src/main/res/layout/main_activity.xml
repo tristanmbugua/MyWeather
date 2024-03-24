@@ -3,13 +3,79 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="150px"
+        android:text="Welcome to MyWeather!"/>
+    <LinearLayout
+        android:id="@+id/locationInfo"
+        android:layout_width="match_parent"
+        android:layout_height="375px"
         android:orientation="vertical">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvWeather_"
+        <TextView
+            android:id="@+id/name"
             android:layout_width="match_parent"
-            android:layout_height="150dp" />
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weatherInfo"
+        android:layout_width="match_parent"
+        android:layout_height="1400px"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/lastUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/tempC"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/feelsLikeC"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/windKPH"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/windDir"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/isDay"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/precip"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/cloud"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/uv"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
+        <TextView
+            android:id="@+id/uvScale"
+            android:textSize="12.0dp"
+            android:text="UV Scale: Low(1-2), Moderate(3-5), High(6-7), Very High(8-10), Extreme(11+)"
+            android:layout_width="match_parent"
+            android:layout_height="125px"/>
     </LinearLayout>
 </LinearLayout>

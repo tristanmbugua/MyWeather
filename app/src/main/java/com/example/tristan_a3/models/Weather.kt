@@ -23,6 +23,6 @@ data class Weather (
     @Json(name = "air_quality") val air_quality: Object?
 ) {
     override fun toString(): String {
-        return "As of " + last_updated + " it is " + temp_c + " F.";
+        return "As of " + last_updated + " it is " + temp_c + " C.";
     }
 }
